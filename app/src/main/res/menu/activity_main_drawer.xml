@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/question"
+            android:title="@string/aboutUs" />
+        <item
+            android:id="@+id/nav_company_profile"
+            android:icon="@drawable/company_profile"
+            android:title="@string/companyProfile" />
+        <item
+            android:id="@+id/nav_directors"
+            android:icon="@drawable/director"
+            android:title="@string/directors" />
+        <item
+            android:id="@+id/nav_management"
+            android:icon="@drawable/management"
+            android:title="@string/management" />
+        <item
+            android:id="@+id/nav_branches"
+            android:icon="@drawable/location"
+            android:title="@string/branches" />
+        <item
+            android:id="@+id/nav_claim_info"
+            android:icon="@drawable/claim"
+            android:title="@string/claimInformation" />
+    </group>
+
+    <item android:title="Communicate"
+        android:visible="false">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share"
+                android:visible="false"/>
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send"
+                android:visible="false"/>
+        </menu>
+    </item>
+
+</menu>

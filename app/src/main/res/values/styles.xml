@@ -1,0 +1,62 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_800</item>
+        <item name="colorPrimaryDark">@color/md_yellow_900</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <!-- MotorTheme-->
+    <style name="MotorTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_800</item>
+        <item name="colorPrimaryDark">@color/md_yellow_900</item>
+        <item name="colorAccent">@color/md_yellow_800</item>
+    </style>
+    <!-- FireTheme-->
+    <style name="FireTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_800</item>
+        <item name="colorPrimaryDark">@color/md_yellow_900</item>
+        <item name="colorAccent">@color/md_yellow_800</item>
+    </style>
+    <!-- MarineTheme-->
+    <style name="MarineTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_800</item>
+        <item name="colorPrimaryDark">@color/md_yellow_900</item>
+        <item name="colorAccent">@color/md_yellow_800</item>
+    </style>
+    <!-- OmpTheme-->
+    <style name="OmpTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/md_yellow_800</item>
+        <item name="colorPrimaryDark">@color/md_yellow_900</item>
+        <item name="colorAccent">@color/md_yellow_800</item>
+    </style>
+    <!--AleartDialog style-->
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <!--buttons color-->
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--title and message color-->
+        <item name="android:textColorPrimary">@color/textColorTitleSmall</item>
+        <!--dialog background-->
+        <item name="android:windowBackground">@drawable/dialog</item>
+    </style>
+    <style name="DialogAnimation_2">
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <!--checkbox style-->
+    <style name="checkBoxStyle" parent="Theme.AppCompat.NoActionBar">
+        <item name="colorAccent">@color/md_yellow_800</item>
+        <item name="colorControlNormal">@color/md_yellow_800</item>
+        <item name="colorControlActivated">@color/md_yellow_800</item>
+        <item name="android:tint">@color/md_yellow_800</item>
+        <item name="android:textColorSecondary">#111</item>
+    </style>
+</resources>

@@ -1,0 +1,123 @@
+<resources>
+    <string name="app_name">BNIC</string>
+    <string name="title_activity_main">BNIC</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="onlineInsurance">Online Insurance</string>
+    <string name="carInsurance">Private &amp; Commercial Vehicle</string>
+    <string name="bikeInsurance">Motorcycle Insurance</string>
+    <string name="fireInsurance">Fire Insurance</string>
+    <string name="marineInsurance">Marine Insurance</string>
+    <string name="miscInsurance">Misc Insurance</string>
+    <string name="buyInsurance">Buy Insurance Online</string>
+    <string name="motorInsurance">Motor Insurance</string>
+    <string name="omp"> Overseas Medical Insurance (Health)</string>
+    <string name="planName">Plan Name</string>
+    <string name="vehiclesPrice">Vehicle Price</string>
+    <string name="vehicleType">Vehicle Type</string>
+    <string name="driver">Driver</string>
+    <string name="conductor">Conductor</string>
+    <string name="airport">Airport</string>
+    <string name="category">Category</string>
+    <string name="helper">Helper</string>
+    <string name="capacity">Capacity (cc/ton)</string>
+    <string name="passenger">Passenger</string>
+    <string name="policyStartDate">Policy Start Date</string>
+    <string name="birthDate">Birth Date</string>
+    <string name="policyEndDate">Policy End Date</string>
+    <string name="buttonGetQuote">Get Quote</string>
+    <string name="policyPeriod">Policy Period</string>
+    <string name="amount">Amount</string>
+    <string name="driverAmount">Driver Amount</string>
+    <string name="passengerAmount">Passenger Amount</string>
+    <string name="vat">VAT</string>
+    <string name="deliveryCharge">Delivery Charge</string>
+    <string name="totalAmount">Total Amount</string>
+    <string name="premiumCalculation">Premium Calculation</string>
+    <string name="MotorInsuranceQuotation">Motor Insurance Quotation</string>
+    <string name="ompInsuranceQuotation">OMP Insurance Quotation</string>
+    <string name="goBack">Go Back</string>
+    <string name="buyInsuranceButton">Buy Insurance</string>
+    <string name="buyNow">PAY NOW</string>
+    <string name="personalAndVehicleInfo">Personal &amp; Vehicle Information</string>
+    <string name="personalInfo">Personal Information</string>
+    <string name="vehicleInfo">Please Enter Vehicle Information</string>
+    <string name="ompInfo">Please Enter OMP Information</string>
+    <string name="insuredFullName">Insured Full Name</string>
+    <string name="fullName">Full Name</string>
+    <string name="insuredAddress">Insured Address</string>
+    <string name="permanentAddress">Permanent Address</string>
+    <string name="mailingAddress">Mailing Address</string>
+    <string name="city">City</string>
+    <string name="permanentCity">Permanent City</string>
+    <string name="mailingCity">Mailing City</string>
+    <string name="sameAsInsuredAddress">Same as Insured Address</string>
+    <string name="sameAsPermanentAddress">Same as Permanent Address</string>
+    <string name="mobile">Mobile</string>
+    <string name="email">Email</string>
+    <string name="stayPeriod">Stay Period (in days)</string>
+    <string name="brand">Vehicle Brand/Make</string>
+    <string name="year">Year of Manufacture</string>
+    <string name="registrationNumber">Registration Number</string>
+    <string name="passportNumber">Passport Number</string>
+    <string name="registrationDate">Registration Date</string>
+    <string name="engineNumber">Engine Number</string>
+    <string name="chassisNo">Chassis No</string>
+    <string name="next">Next</string>
+    <string name="submit">Submit</string>
+    <string name="proposerName">Full Name of Proposer</string>
+    <string name="carPrice">Car Price</string>
+    <string name="facility">Facility Excluding(Click to view)</string>
+    <string name="address">Address</string>
+    <string name="partnersBank">Name of Partners Bank (if any)</string>
+    <string name="tradeOrProfession">Trade or Profession</string>
+    <string name="termsOfInsuranceForm">Terms of Insurance form</string>
+    <string name="proposalForFireInsurance">Proposal For Fire Insurance</string>
+    <string name="insuredM_s">Name of Insured M/s</string>
+    <string name="natureOfCommodities">Nature of Commodities</string>
+    <string name="modeOfPacking">Mode of Packing</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="via">Via</string>
+    <string name="toBeShippedPer">To be Shipped per</string>
+    <string name="riskCovered">Risk Covered</string>
+    <string name="amountTk">Amount Tk</string>
+    <string name="marineTitle">Declaration for Marine Cover Note</string>
+    <string name="preview">Preview Details</string>
+    <string name="declaration">Declaration</string>
+    <string name="terms_condition">Accept Terms &amp; Condition</string>
+    <string name="view_policy"><u>View Policy</u></string>
+    <string name="confirmText">I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief and I undertake to inform you of any changes therein immediately. I also declare that all the documents to operate the vehicle on public road are current and valid.</string>
+    <!--drawer menu-->
+    <string name="aboutUs">About Us</string>
+    <string name="companyProfile">Company Profile</string>
+    <string name="directors">Board of Directors</string>
+    <string name="management">Management</string>
+    <string name="branches">Branches Office</string>
+    <string name="claimInformation">Claim Information</string>
+
+    <string name="OMP_dialog">This Overseas Mediclaim Insurance is only available to Bangladesh Citizens between 6 (Six) Month to 79 (Seventy Nine ) Years of age who are undertaking bonafide trips outside Bangladesh which will not involve any form of manual work and do not exceed 180 (One Hundred Eighty) days in duration unless specifically extended.</string>
+
+    <!--Plan Name Data-->
+    <string-array name="PLAN">
+        <item>Act Liability</item>
+    </string-array>
+    <!--Plan Name Data-->
+    <string-array name="VEHICLE_TYPE">
+        <item>Motor Cycle</item>
+    </string-array>
+    <!--category-->
+    <string-array name="CATEGORY">
+        <item>Medical</item>
+        <item>Non Medical</item>
+    </string-array>
+    <!--sub type-->
+    <string-array name="SUB_TYPE">
+        <item>Private Vehicle</item>
+        <item>Commercial Vehicle (CV)</item>
+    </string-array>
+</resources>

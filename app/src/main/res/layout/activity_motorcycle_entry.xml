@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Insurance.Motorcycle.ActivityMotorcycleEntry">
+    <include layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:fitsSystemWindows="true"
+        android:scrollbarSize="1.5dp"
+        android:scrollbars="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size23dp"
+            android:orientation="vertical">
+            <!--entry label-->
+            <LinearLayout
+                android:id="@+id/customerEntryForm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/size23dp"
+                android:layout_marginTop="23dp"
+                android:layout_marginRight="@dimen/size23dp"
+                android:layout_marginBottom="23dp"
+                android:background="@drawable/card_style"
+                android:elevation="5dp"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <!--Title label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginBottom="@dimen/size11dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center|left"
+                        android:background="@drawable/disable_card_style">
+
+                        <TextView
+                            android:id="@+id/textViewTitle"
+                            android:layout_width="match_parent"
+                            android:layout_height="18dp"
+                            android:layout_gravity="center|left"
+                            android:gravity="left"
+                            android:paddingLeft="@dimen/size11dp"
+                            android:text="@string/vehicleInfo"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:textSize="@dimen/size14sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!-- plan name-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/size11dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPlanName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left"
+                        android:text="@string/planName"
+                        android:textColor="@color/textColorTitleLarge"
+                        android:textSize="@dimen/size12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/disable_card_style">
+
+                        <Spinner
+                            android:id="@+id/spinnerPlanName"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/md_yellow_800"
+                            android:fitsSystemWindows="true"
+                            android:gravity="center"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="0dp"
+                            android:scrollbarSize="4dp"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Car Price-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:minHeight="60dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear_layout_motor_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|start"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/vehiclesPrice"
+                            android:textSize="@dimen/size12sp"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:gravity="start"
+                            android:layout_marginStart="8dp"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minHeight="40dp"
+                            android:layout_gravity="center|start"
+                            android:background="@drawable/small_card_style"
+                            android:layout_marginTop="4dp">
+
+                            <EditText
+                                android:id="@+id/editText_vehicles_price"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:minHeight="40dp"
+                                android:layout_gravity="center|start"
+                                android:inputType="number"
+                                android:textSize="@dimen/size14sp"
+                                android:textColor="@color/textColorTitleSmall"
+                                android:textColorHint="@color/textColorTitleSmall"
+                                android:backgroundTint="@android:color/transparent"
+                                android:paddingStart="10dp"
+                                android:paddingEnd="5dp"
+                                android:background="@color/md_red_900"
+                                android:hint="@string/vehiclesPrice"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- vehicle  type-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewVehicleType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left"
+                        android:text="@string/vehicleType"
+                        android:textColor="@color/textColorTitleLarge"
+                        android:textSize="@dimen/size12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/disable_card_style">
+
+                        <Spinner
+                            android:id="@+id/spinnerVehicleType"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/md_yellow_800"
+                            android:fitsSystemWindows="true"
+                            android:gravity="center"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="0dp"
+                            android:scrollbarSize="4dp"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--Driver & capacity-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewDriver"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:text="@string/driver"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:textSize="@dimen/size12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/disable_card_style">
+
+                            <Spinner
+                                android:id="@+id/spinnerDriver"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:backgroundTint="@color/md_yellow_800"
+                                android:fitsSystemWindows="true"
+                                android:gravity="center"
+                                android:paddingLeft="0dp"
+                                android:paddingBottom="0dp"
+                                android:scrollbarSize="4dp"
+                                android:spinnerMode="dropdown" />
+                        </LinearLayout>
+                        <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="40dp"
+                    android:layout_gravity="center|left"
+                    android:background="@drawable/disable_card_style"
+                    android:layout_marginTop="4dp">
+                    <EditText
+                        android:id="@+id/editTextDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:minHeight="40dp"
+                        android:layout_gravity="center|left"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:textSize="@dimen/size14sp"
+                        android:enabled="false"
+                        android:textColor="@color/textColorTitleSmall"
+                        android:textColorHint="@color/textColorTitleSmall"
+                        android:backgroundTint="@android:color/transparent"
+                        android:paddingLeft="0dp"
+                        android:background="@color/md_red_900"
+                        android:hint="Enter Driver No"/>
+                </LinearLayout>-->
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="@dimen/size14dp"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewCapacity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:text="@string/capacity"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:textSize="@dimen/size12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/small_card_style"
+                            android:minHeight="40dp">
+
+                            <EditText
+                                android:id="@+id/editTextCapacity"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="@android:color/transparent"
+                                android:gravity="center"
+                                android:hint="Engine Capacity"
+                                android:inputType="number"
+                                android:minHeight="40dp"
+                                android:paddingLeft="0dp"
+                                android:textColor="@color/textColorTitleSmall"
+                                android:textColorHint="@color/textColorTitleSmall"
+                                android:textSize="@dimen/size14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!--Facility-->
+                <LinearLayout
+                    android:id="@+id/linearLayoutFacility_motor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="4dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:orientation="vertical"
+                        >
+                        <TextView
+                            android:id="@+id/textViewFacility_motor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/facility"
+                            android:textSize="@dimen/size12sp"
+                            android:textColor="@color/colorAccent"
+                            android:gravity="left"
+                            android:layout_marginLeft="8dp"/>
+                        <LinearLayout
+                            android:id="@+id/linearLayoutRecycler_motor"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="4dp">
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/recyclerViewFacility_motor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                tools:layout_editor_absoluteX="0dp"
+                                tools:layout_editor_absoluteY="-51dp"
+                                android:layout_marginRight="11dp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="@dimen/size11dp"
+                                android:layout_marginBottom="10dp" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <!-- passenger-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|left"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textViewPassenger"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="8dp"
+                        android:gravity="left"
+                        android:text="@string/passenger"
+                        android:textColor="@color/textColorTitleLarge"
+                        android:textSize="@dimen/size12sp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center|left"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/disable_card_style">
+
+                        <Spinner
+                            android:id="@+id/spinnerPassenger"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:backgroundTint="@color/md_yellow_800"
+                            android:fitsSystemWindows="true"
+                            android:gravity="center"
+                            android:paddingLeft="0dp"
+                            android:paddingBottom="0dp"
+                            android:scrollbarSize="4dp"
+                            android:spinnerMode="dropdown" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <!--start & end date entry label-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginBottom="@dimen/size23dp"
+                    android:minHeight="60dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewPolicyStartDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:text="@string/policyStartDate"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:textSize="@dimen/size12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/small_card_style"
+                            android:minHeight="40dp">
+
+                            <EditText
+                                android:id="@+id/editTextPolicyStartDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:background="@color/textColorTitleLarge"
+                                android:backgroundTint="@android:color/transparent"
+                                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                                android:drawableTint="@color/md_yellow_800"
+                                android:editable="false"
+                                android:minHeight="40dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/textColorTitleSmall"
+                                android:textColorHint="@color/textColorTitleSmall"
+                                android:textSize="@dimen/size11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="7dp"
+                        android:layout_height="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center|left"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textViewPolicyEndDate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:gravity="left"
+                            android:text="@string/policyEndDate"
+                            android:textColor="@color/textColorTitleLarge"
+                            android:textSize="@dimen/size12sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center|left"
+                            android:layout_marginTop="4dp"
+                            android:background="@drawable/disable_card_style"
+                            android:minHeight="40dp">
+
+                            <EditText
+                                android:id="@+id/editTextPolicyEndDate"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center|left"
+                                android:background="@color/md_red_900"
+                                android:backgroundTint="@android:color/transparent"
+                                android:drawableLeft="@android:drawable/ic_menu_my_calendar"
+                                android:drawableTint="@color/md_yellow_800"
+                                android:editable="false"
+                                android:minHeight="40dp"
+                                android:paddingRight="5dp"
+                                android:textColor="@color/textColorTitleSmall"
+                                android:textColorHint="@color/textColorTitleSmall"
+                                android:textSize="@dimen/size11sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/buttonGetQuote"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="60dp"
+                    android:layout_marginBottom="23dp"
+                    android:background="@drawable/button_style_motor"
+                    android:text="@string/buttonGetQuote"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/size14sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
